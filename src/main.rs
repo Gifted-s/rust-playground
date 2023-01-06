@@ -19,7 +19,47 @@ fn main() {
     println!("{} String here", s2);
 
     // reference recommended
+
+    /*
+        this will throw an error because you can't have two mutable reference to a single variable to prevent DATA RACE (think of two threads
+        with shared access to read or modify a single resources without control  )
+    */
+    // let mut s = String::from("test");
+    // let r1 = &mut s;
+    // let r2 = &mut s;
+    // println!("{}, {}", r1, r2);
+
+    // works(all reference immutable)
+    // let s = String::from("test");
+    // let r1 = &s;
+    // let r2 = &s;
+    // println!("{}, {}", r1, r2);
+
+    // this will fail because RUST does not allow you to have both mutable and immutable reference of thesame variable together(think of you must be specific, don't confuse the compiler :) )
+    // let mut s = String::from("test");
+    // let r1 = &s;
+    // let r2 = &s;
+    // let r3 = &mut s;
+
+    // println!("{}, {}", r1, r2);
+
+    // Note that the scope of a reference begins when its first introduced and ends the last time its used so this code will work
+    // let mut s = String::from("test");
+    // let r1 = &s;
+    // let r2 = &s;
+    // println!("{}, {}", r1, r2);
+    // let r3 = &mut s;
+    // println!("{} ", r3);
+
+    // DANGLING POINTERS
+    let reference = dangle();
 }
+
+fn dangle() -> &String {
+    let s = String::from("Scifi");
+    &s
+}
+
 fn moves(name: String) {
     println!("name is {}", name);
 }
