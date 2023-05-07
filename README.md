@@ -1,7 +1,7 @@
 
 # RUST
 
-Compilation of rust contents and learnings, the language is different no cap :)
+Compilation of rust contents and learnings
 
 ```rust
 struct GoFmt {}
