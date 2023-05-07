@@ -1,7 +1,7 @@
 
 # RUST
 
-Compilation of rust contents and learnings
+All about rust
 
 ```rust
 struct GoFmt {}
@@ -12,7 +12,7 @@ impl GoFmt {
 }
 fn main() {
     let fmt = GoFmt {};
-    let msg = String::from( "This is complete madness, Daniel :)))");
+    let msg = String::from( "Lol, This is complete madness");
     fmt.Println(msg);
 }
 
