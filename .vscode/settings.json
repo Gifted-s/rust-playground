@@ -9,6 +9,7 @@
         "./collections/Cargo.toml",
         "./collections/Cargo.toml",
         "./error/Cargo.toml",
-        "./error/Cargo.toml"
+        "./error/Cargo.toml",
+        "./generics/Cargo.toml"
     ]
 }
