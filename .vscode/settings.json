@@ -2,6 +2,13 @@
     "rust-analyzer.linkedProjects": [
         "./sample_project/Cargo.toml",
         "./Cargo.toml",
-        "./guessing_game/Cargo.toml"
+        "./guessing_game/Cargo.toml",
+        "./restaurant/Cargo.toml",
+        "./restaurant/Cargo.toml",
+        "./restaurant/Cargo.toml",
+        "./collections/Cargo.toml",
+        "./collections/Cargo.toml",
+        "./error/Cargo.toml",
+        "./error/Cargo.toml"
     ]
 }
