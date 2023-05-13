@@ -11,6 +11,7 @@
         "./error/Cargo.toml",
         "./error/Cargo.toml",
         "./generics/Cargo.toml",
-        "./traits/Cargo.toml"
+        "./traits/Cargo.toml",
+        "./lifetime/Cargo.toml"
     ]
 }
