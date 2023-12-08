@@ -12,7 +12,7 @@ impl GoFmt {
 }
 fn main() {
     let fmt = GoFmt {};
-    let msg = String::from( "Lol, This is complete madness");
+    let msg = String::from( "rustacean :)");
     fmt.Println(msg);
 }
 
